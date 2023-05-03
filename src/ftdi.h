@@ -589,6 +589,7 @@ extern "C"
     void ftdi_transfer_data_cancel(struct ftdi_transfer_control *tc, struct timeval * to);
 
     int ftdi_set_bitmode(struct ftdi_context *ftdi, unsigned char bitmask, unsigned char mode);
+    int ftdi_set_module_detach_mode(struct ftdi_context *ftdi, enum ftdi_module_detach_mode mode);
     int ftdi_disable_bitbang(struct ftdi_context *ftdi);
     int ftdi_read_pins(struct ftdi_context *ftdi, unsigned char *pins);
 
